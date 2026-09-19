@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="lunaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#881337" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#030206" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#fde68a"/>
+      <stop offset="70%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circular dark base -->
+  <circle cx="32" cy="32" r="31" fill="#030206" stroke="url(#goldGrad)" stroke-width="1.2"/>
+  <circle cx="32" cy="32" r="30" fill="url(#lunaGlow)"/>
+
+  <!-- Crescent Moon -->
+  <path d="M38 12 C24 14 16 26 18 39 C20 50 30 55 42 50 C32 52 23 46 22 36 C21 26 28 17 38 12 Z" fill="url(#goldGrad)"/>
+
+  <!-- Intertwined Serif M monogram -->
+  <path d="M26 44 L26 22 L32 36 L38 22 L38 44 M24 22 L28 22 M36 22 L40 22 M24 44 L28 44 M36 44 L40 44" stroke="url(#goldGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- 4-point Celestial Star in upper-right quadrant -->
+  <path d="M43 18 L44 14 L45 18 L49 19 L45 20 L44 24 L43 20 L39 19 Z" fill="#ffffff"/>
+  <circle cx="44" cy="19" r="0.8" fill="#fde68a"/>
+</svg>

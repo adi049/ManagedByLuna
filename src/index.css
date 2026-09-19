@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Cinzel", "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: "Space Grotesk", monospace;
+  }
+
+  html {
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #030206;
+    color: #f1f0f5;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    selection-background-color: #881337;
+    selection-color: #ffffff;
+  }
+}
+
+/* Luxury Metallic and Silver Text Styling */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-luxury {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Metallic Silver Gradient for LUNA */
+.metallic-silver-text {
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 25%, #94a3b8 50%, #f8fafc 75%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 12px rgba(255, 255, 255, 0.15));
+}
+
+/* Champagne Gold & Platinum Metallic Gradient (matching official logo badge) */
+.metallic-gold-text {
+  background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 25%, #d97706 50%, #fde68a 75%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.metallic-champagne-silver {
+  background: linear-gradient(140deg, #ffffff 0%, #f1ede4 20%, #c9bca6 45%, #ffffff 60%, #9e9382 85%, #d8cec0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Refined Subtle Glows */
+.subtle-purple-glow {
+  box-shadow: 0 0 45px -10px rgba(109, 40, 217, 0.25);
+}
+
+.subtle-crimson-glow {
+  box-shadow: 0 0 45px -10px rgba(190, 18, 60, 0.22);
+}
+
+/* Subtle Film Grain */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* Smooth Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030206;
+}
+::-webkit-scrollbar-thumb {
+  background: #231d2e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4c1d95;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.55s ease forwards;
+}
+
+/* Slow cinematic drift for portraits (restrained) */
+@keyframes luna-kenburns {
+  0% { transform: scale(1.02) translate3d(0, 0, 0); }
+  100% { transform: scale(1.08) translate3d(-0.6%, -0.4%, 0); }
+}
+
+.kenburns {
+  animation: luna-kenburns 26s ease-in-out infinite alternate;
+}
+
+/* Portrait unification — subtle crimson/purple grade + vignette, face kept natural */
+.portrait-grade::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 90% at 50% 30%, transparent 45%, rgba(3, 2, 6, 0.55) 100%),
+    linear-gradient(180deg, rgba(15, 4, 20, 0.18) 0%, transparent 28%, transparent 60%, rgba(8, 2, 10, 0.5) 100%);
+  mix-blend-mode: normal;
+}
+
+.portrait-grade::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background:
+    radial-gradient(80% 60% at 15% 85%, rgba(136, 19, 55, 0.22) 0%, transparent 60%),
+    radial-gradient(70% 60% at 90% 15%, rgba(76, 29, 149, 0.2) 0%, transparent 60%);
+}
+
+/* Film-frame tick marks for the photography section */
+.film-edge {
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.14) 1px, transparent 1px);
+  background-size: 22px 100%, 22px 100%;
+  background-position: 0 0, 0 100%;
+  background-repeat: repeat-x;
+}
+
+@keyframes pulse-line {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.8; }
+}
+.pulse-line {
+  animation: pulse-line 3.5s ease-in-out infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-fade-in,
+  .animate-spin {
+    animation: none !important;
+  }
+}
+
+
+/* ===== Final production polish: smooth, mobile-first interaction ===== */
+* {
+  box-sizing: border-box;
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+}
+
+button, a, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+  touch-action: manipulation;
+}
+
+::selection {
+  background: rgba(136, 19, 55, 0.75);
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 76px;
+  }
+
+  body {
+    min-width: 320px;
+  }
+
+  .kenburns {
+    animation-duration: 34s;
+  }
+
+  /* Reduce expensive blur/shadow work on small screens while preserving the look. */
+  .backdrop-blur-2xl {
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+  }
+
+  .backdrop-blur-xl {
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
