@@ -172,7 +172,7 @@ export const HomeHero: React.FC<HomeHeroProps> = ({
                   <div className="absolute inset-0 rounded-full border border-white/10 backdrop-blur-[2px] shadow-[inset_0_0_30px_rgba(255,255,255,0.05)]" />
                   <div className="w-full h-full rounded-full overflow-hidden relative shadow-[0_0_50px_rgba(0,0,0,0.95)]">
                     <img
-                      src="/images/luna_hero_artifact.png"
+                      src={`${import.meta.env.BASE_URL}images/luna_hero_artifact.png`}
                       alt="Managed By Luna digital presence abstract lunar sculpture"
                       width={400}
                       height={400}

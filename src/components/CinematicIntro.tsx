@@ -262,7 +262,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({
               <div className="absolute inset-0 rounded-full bg-sky-500/15 blur-xl scale-110 animate-pulse" />
               <div className="w-36 h-36 sm:w-44 sm:h-44 md:w-56 md:h-56 relative rounded-full overflow-hidden shadow-[0_0_50px_rgba(202,166,105,0.25)] border border-amber-400/30">
                 <img
-                  src="/images/managed_by_luna_logo.png"
+                  src={`${import.meta.env.BASE_URL}images/managed_by_luna_logo.png`}
                   alt="Managed By Luna Crest"
                   className="w-full h-full object-cover"
                 />
@@ -332,7 +332,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({
             muted
             playsInline
             preload="metadata"
-            poster="/images/luna_hero_artifact.png"
+            poster={`${import.meta.env.BASE_URL}images/luna_hero_artifact.png`}
             onEnded={() => {
               if (step === 'VIDEO_REVEAL') {
                 setStep('VIDEO_TO_BLACK');
@@ -373,7 +373,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({
             {/* The exact official crest */}
             <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden shadow-[0_0_60px_rgba(202,166,105,0.4)] border border-amber-400/40">
               <img
-                src="/images/managed_by_luna_logo.png"
+                src={`${import.meta.env.BASE_URL}images/managed_by_luna_logo.png`}
                 alt="Managed By Luna"
                 className="w-full h-full object-cover"
               />

@@ -60,7 +60,7 @@ export const OfficialBrandLogo: React.FC<OfficialBrandLogoProps> = ({
     return (
       <div className={`relative flex items-center justify-center ${sizeMap[size]} ${className}`}>
         <img
-          src="/images/managed_by_luna_logo.png"
+          src={`${import.meta.env.BASE_URL}images/managed_by_luna_logo.png`}
           alt="Managed By Luna Official Crest"
           className="w-full h-full object-contain filter drop-shadow-[0_0_20px_rgba(202,166,105,0.25)] select-none pointer-events-none"
         />
@@ -75,7 +75,7 @@ export const OfficialBrandLogo: React.FC<OfficialBrandLogoProps> = ({
         <div className="relative w-9 h-9 md:w-11 md:h-11 rounded-full p-[1px] bg-gradient-to-tr from-amber-400/40 via-white/20 to-sky-400/30 shadow-[0_0_15px_rgba(202,166,105,0.2)]">
           <div className="w-full h-full rounded-full bg-[#030206] flex items-center justify-center overflow-hidden">
             <img
-              src="/images/managed_by_luna_logo.png"
+              src={`${import.meta.env.BASE_URL}images/managed_by_luna_logo.png`}
               alt="Managed By Luna Logo"
               className="w-full h-full object-cover scale-110"
             />
@@ -107,7 +107,7 @@ export const OfficialBrandLogo: React.FC<OfficialBrandLogoProps> = ({
         <div className="absolute inset-0 rounded-full bg-amber-500/10 blur-2xl pointer-events-none" />
 
         <img
-          src="/images/managed_by_luna_logo.png"
+          src={`${import.meta.env.BASE_URL}images/managed_by_luna_logo.png`}
           alt="Managed By Luna Logo"
           className="w-full h-full object-contain filter drop-shadow-[0_8px_30px_rgba(0,0,0,0.8)] relative z-10"
         />

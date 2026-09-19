@@ -88,7 +88,7 @@ export const MemberAaditya: React.FC = () => {
                 <Code2 className="w-5 h-5 text-purple-300/70" strokeWidth={1.25} />
               </div>
               <PortraitMedia
-                src="/images/team/aaditya.jpg"
+                src={`${import.meta.env.BASE_URL}images/team/aaditya.jpg`}
                 alt="Aaditya — Frontend Developer and Website Maker at Managed By Luna"
                 objectPosition="50% 35%"
                 className="relative aspect-[4/5] w-full border border-white/[0.08] shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9)]"
@@ -209,7 +209,7 @@ export const MemberAnupama: React.FC = () => {
                 </span>
               </div>
               <PortraitMedia
-                src="/images/team/anupama.jpg"
+                src={`${import.meta.env.BASE_URL}images/team/anupama.jpg`}
                 alt="Anupama — Creative Strategist and Kathak Teacher at Managed By Luna"
                 objectPosition="50% 63%"
                 className="relative aspect-[3/4] w-full border border-white/[0.08] shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9)]"
@@ -309,7 +309,7 @@ export const MemberSanjukta: React.FC = () => {
                 </span>
               </div>
               <PortraitMedia
-                src="/images/team/sanjukta.jpg"
+                src={`${import.meta.env.BASE_URL}images/team/sanjukta.jpg`}
                 alt="Sanjukta — Photographer and Editor at Managed By Luna"
                 objectPosition="50% 45%"
                 className="relative aspect-[4/5] w-full border border-white/[0.08] shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9)]"

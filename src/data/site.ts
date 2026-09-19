@@ -9,9 +9,9 @@ export const PROJECTS = [
   {
     id: '01',
     name: 'URVI',
-    category: 'Project / Repository',
-    href: 'https://github.com/adi049/urvi',
-    cta: 'VIEW PROJECT',
+    category: 'Live Website',
+    href: 'https://adi049.github.io/urvi/',
+    cta: 'VIEW WEBSITE',
   },
   {
     id: '02',
@@ -67,7 +67,7 @@ export const PROJECTS = [
 /** Portfolio index used on the dedicated Website Services page.
  *  URVI is a GitHub repository — never labelled as a live website. */
 export const WEBSITE_PROJECTS = [
-  { id: '01', name: 'URVI', category: 'PROJECT / REPOSITORY', href: 'https://github.com/adi049/urvi', cta: 'VIEW PROJECT' },
+  { id: '01', name: 'URVI', category: 'LIVE WEBSITE', href: 'https://adi049.github.io/urvi/', cta: 'VIEW WEBSITE' },
   { id: '02', name: 'ANSH MAKEOVERS', category: 'LIVE WEBSITE', href: 'https://anshmakeovers.com/', cta: 'VIEW WEBSITE' },
   { id: '03', name: '24SEVEN LIBRARY MANAGEMENT', category: 'LIVE WEBSITE', href: 'https://24sevenlibrary.in/', cta: 'VIEW WEBSITE' },
   { id: '04', name: 'SKIN REVITAL', category: 'LIVE WEBSITE', href: 'https://skinrevital.in/', cta: 'VIEW WEBSITE' },
